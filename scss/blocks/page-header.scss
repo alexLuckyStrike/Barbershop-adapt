@@ -37,20 +37,38 @@
     width:370px;
     height: auto;
     margin: 0 auto;
-    margin-top: 40px;
+    position:relative;
+    top:30%;
+    transform:translateY(-100%);
   }
+
+  .inner-photo .page-header__logo,
+  .inner-form .page-header__logo{
+    height: 200px;
+  }
+
 }
 
 @media(min-width:$desktop-width){
   .page-header{
     width:1200px;
   }
+
   .page-header__logo{
     height: 648px;
     width: 100%;
     order:2;
     background-position: center 0;
     background-size: cover;
+  }
+
+  .page-header__logo-image{
+    top:40%;
+  }
+
+  .inner-photo .page-header__logo,
+  .inner-form .page-header__logo{
+    height: 300px;
   }
 
 }

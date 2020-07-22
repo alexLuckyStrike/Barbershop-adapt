@@ -21,14 +21,26 @@
         </button>
         <div class="main-nav__wrapper">
         <ul class="main-nav__main-menu">
-            <li class="main-menu__item main-menu__item--active"><a>Главная</a></li>
-            <li class="main-menu__item"><a href="#">Наши работы</a></li>
-            <li class="main-menu__item"><a href="#">Записаться</a></li>
-            <li class="main-menu__item"><a href="#">Контакты</a></li>
-            <li class="main-menu__item"><a href="#">HTML ACADEMY</a></li>
+            <li class="main-menu__item main-menu__item--active">
+                <a>Главная</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#">Наши работы</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#">Записаться</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#">Контакты</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#">HTML ACADEMY</a>
+            </li>
         </ul>
         <ul class="main-nav__user-menu">
-            <li class="user-menu__item"><a href="#">Войти</a></li>
+            <li class="user-menu__item">
+                <a href="#">Войти</a>
+            </li>
         </ul>
         </div>
     </nav>
@@ -42,19 +54,19 @@
 <ul class="stats-features">
     <li class="stats-features__item">
         <p class="stats-features__cash">1 500 *</p>
-        <p class="stats-features__text">рублей вложений</p>
+        <p class="stats-features__text">рублей <br>вложений</p>
     </li>
     <li class="stats-features__item">
         <p class="stats-features__cash">7 200</p>
-        <p class="stats-features__text">секунд времени мастера</p>
+        <p class="stats-features__text">секунд  <br> времени мастера</p>
     </li>
     <li class="stats-features__item">
         <p class="stats-features__cash">90 000</p>
-        <p class="stats-features__text">постриженных волос</p>
+        <p class="stats-features__text">постриженных  <br> волос</p>
     </li>
     <li class="stats-features__item">
         <p class="stats-features__cash">500 000</p>
-        <p class="stats-features__text">лайков и комплиментов</p>
+        <p class="stats-features__text">лайков  <br> и комплиментов</p>
     </li>
 </ul>
 </section>
@@ -90,6 +102,7 @@
             Забудьте,как вы стриглись раньше.
             Мы сделаем из вас звезду футбола или кино.
             Во всяком случае внешне.
+            Ну как получится.
         </p>
         </div>
     </div>
@@ -109,34 +122,29 @@
 </section>
 <div class="section-wrapper">
 <section class="news-stocks">
+    <div class="news-stocks__figure"></div>
 <h2 class="news-stocks__title">
     новости и акции
 </h2>
     <div class="lock">
-    <p class="news-stocks__alco">
+    <p class="news-stocks__message news-stocks__message--alco">
         Нам наконец завезли Ягермайстер!
         Теперь вы можете пропустить стаканчик
         во время стрижки.
     </p>
-    <p class="news-stocks__newcomer">
+    <p class="news-stocks__message news-stocks__message--newcommer">
         В нашей команде поплнение,
         Борис "Бритва" Стригунец,
         обладатель множества титулов и наград
         поплнил наши стройные ряды.
         Спешите записаться!
     </p>
-        <p class="news-stocks__price">
-        Все дорожает а наши стрижки нет!
-            Как так? Приходите, постригитесь
-            и узнаете, в чем здесь подвох!
-        </p>
     </div>
-    <div class="news-stocks__wrap">
-    <a class="news-stocks__btn">показать все</a>
-    </div>
+    <button class="news-stocks__btn">показать все</button>
 </section>
 <section class="reviews">
-<h2>Отзывы о нас</h2>
+<h2 class="reviews__title">Отзывы о нас</h2>
+    <button class="reviews__btn">оставить свой</button>
     <input class="visually-hidden" id="btn-4" type="radio" name="toggle" checked>
     <input class="visually-hidden" id="btn-5" type="radio" name="toggle">
     <input class="visually-hidden" id="btn-6" type="radio" name="toggle">
@@ -158,13 +166,27 @@
                 </p>
             </div>
             <div class="reviews-slider__slide">
-                <p>В макете слайда не было</p>
+                <p class="reviews-slider__name">
+                    <strong>Вася Пупкин</strong>
+                </p>
+                <p>
+                    Спасибо за лысину! Всегда хотел одать за стрижку
+                    машинкой под ноль 10 000 рублей.
+                </p>
             </div>
             <div class="reviews-slider__slide">
-                <p>Я это сам написал</p>
+                <p class="reviews-slider__name">
+                    <strong>Петя Иванов</strong>
+                </p>
+                <p>
+                    На самом деле мне плевать на стрижку.
+                    Я пришел за виски!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium asperiores, commodi consectetur corporis cupiditate, dicta dolor dolorem ducimus porro possimus reiciendis rerum saepe sit soluta totam voluptate voluptatum? Dignissimos, voluptate!
+                </p>
             </div>
         </div>
     </div>
+    <div class="reviews__figureBlack"></div>
 </section>
 </div>
 <footer class="page-footer">
@@ -197,21 +219,6 @@
 </div>
     </div>
 </footer>
-<script>
-    let navMain = document.querySelector('.main-nav');
-    let navToggle = document.querySelector('.main-nav__toggle');
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click',function(){
-        if(navMain.classList.contains('main-nav--closed')){
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-        }else{
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-        }
-    });
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

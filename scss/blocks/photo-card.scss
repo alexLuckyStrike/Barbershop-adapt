@@ -1,0 +1,253 @@
+
+.photo-card{
+  display: flex;
+  width:280px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.photo-card__item-first{
+  width:280px;
+  height: 480px;
+  background: url('../../jpg/photo-1-mobile.jpg');
+}
+
+.photo-card__item-second{
+  width:280px;
+  height: 176px;
+  background: url('../../jpg/photo-2-mobile.jpg');
+}
+
+.photo-card__item-third{
+  width:280px;
+  height: 176px;
+  background: url('../../jpg/photo-3-mobile.jpg');
+}
+
+.photo-card__item-fourth{
+  width:280px;
+  height: 176px;
+  background: url('../../jpg/photo-4-mobile.jpg');
+}
+
+
+.photo-card__item-text{
+  padding:28px 28px 36px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-card__list dt{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight:bold;
+}
+
+.photo-card__list dd{
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.photo-card__outSideWrapper p,
+.photo-card__insideWrapper p{
+  font-size:14px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.photo-card__outSideWrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-card__insideWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 25px 0;
+  position:relative;
+}
+
+.photo-card__outSideWrapper{
+  position:relative;
+}
+
+.photo-card__outSideWrapper:before{
+  content:" ";
+  position:absolute;
+  width: 45px;
+  height: 20px;
+  bottom:2px;
+  background:url('../../svg/mustache-icon.svg.svg') no-repeat center;
+}
+
+.photo-card__insideWrapper-text{
+  margin-left: 45px;
+}
+
+.photo-card{
+  border:1px solid rgb(229,221,213);
+}
+
+.photo-card__insideWrapper--first:after{
+  content:" ";
+  position:absolute;
+  width: 21px;
+  height: 20px;
+  background: url('../../svg/scissors-icon.svg.svg');
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.photo-card__insideWrapper--first:before{
+  content:" ";
+  position:absolute;
+  width: 23px;
+  height: 21px;
+  background: url('../../svg/beard-icon.svg.svg');
+  left:120px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.photo-card__insideWrapper--second:after{
+  content:" ";
+  position:absolute;
+  width: 21px;
+  height: 20px;
+  background: url('../../svg/scissors-icon.svg.svg');
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.photo-card__insideWrapper--third:after{
+  content:" ";
+  position:absolute;
+  width: 23px;
+  height: 21px;
+  background: url('../../svg/beard-icon.svg.svg');
+  left:0px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.photo-card__insideWrapper--third:before{
+  content:" ";
+  position:absolute;
+  width: 45px;
+  height: 12px;
+  background: url('../../svg/mustache-icon.svg.svg');
+  left:120px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.photo-card__insideWrapper--fourth:after{
+  content:" ";
+  position:absolute;
+  width: 21px;
+  height: 20px;
+  background: url('../../svg/scissors-icon.svg.svg');
+  left:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+@media(min-width:768px){
+  .photo-card{
+    flex-direction: row;
+    justify-content: space-between;
+    width:640px;
+  }
+
+  .photo-card__item-text{
+    width: 320px;
+    justify-content: space-between;
+  }
+
+  .photo-card__item-first{
+    height: 480px;
+    width:272px;
+    background:url('../../jpg/photo-1-tablet.jpg');
+  }
+
+  .photo-card__item-second{
+    height: 293px;
+    width:270px;
+    background: url('../../jpg/photo-2-tablet.jpg');
+  }
+
+  .photo-card__item-third{
+    width:270px;
+    height:294px;
+    background: url('../../jpg/photo-3-tablet.jpg');
+  }
+
+  .photo-card__item-fourth{
+    width:270px;
+    height:293px;
+    background: url('../../jpg/photo-4-tablet.jpg');
+  }
+
+  .photo-card__item-text{
+    padding-right: 60px;
+  }
+}
+
+@media(min-width:1200px){
+.photo-card__item-first{
+  height: 480px;
+  width:480px;
+  background: url('../../jpg/photo-1-desktop.jpg');
+}
+
+  .photo-card{
+    width: 294px;
+  }
+
+  .photo-card--best{
+    width: 960px;
+  }
+
+
+  .photo-card--fourth,
+  .photo-card--third,
+  .photo-card--second{
+    width: 294px;
+    flex-direction: column;
+  }
+
+  .photo-card__item-text{
+    width: 294px;
+    min-height: 247px;
+  }
+
+  .photo-card__item--second {
+    height: 294px;
+    width: 294px;
+    background: url('../../jpg/photo-2-desktop.jpg') center;
+    //background-size: cover;
+  }
+
+  .photo-card__item--third{
+    height: 294px;
+    width: 294px;
+    background: url('../../jpg/photo-3-desktop.jpg');
+  }
+
+  .photo-card__item--fourth{
+    height: 294px;
+    width: 294px;
+    background: url('../../jpg/photo-4-desktop.jpg');
+    background-size: 100%;
+  }
+
+  .photo-card__outSideWrapper{
+
+  }
+
+}
+

@@ -1,0 +1,12 @@
+.photo-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+@media(min-width:1200px){
+  .photo-group{}
+}
+

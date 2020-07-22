@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-form">
+<header class="page-header">
+    <a href="#" class="page-header__logo">
+        <svg class="page-header__logo-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="226" height="30" viewBox="0 0 226 30">
+            <image id="logotype-mobile.svg" width="226" height="30" xlink:href="data:img/png;base64,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"/>
+        </svg>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__main-menu">
+                <li class="main-menu__item main-menu__item--active">
+                    <a>Главная</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Наши работы</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Записаться</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">Контакты</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="#">HTML ACADEMY</a>
+                </li>
+            </ul>
+            <ul class="main-nav__user-menu">
+                <li class="user-menu__item user-menu__item--enter">
+                    <button class="user-menu__item--enter" >Войти</button></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="form-page">
+    <div class="form-page__wrapper">
+<h1 class="form-page__title">
+    Запись на стрижку
+</h1>
+    <button class="form-page__btn">на главную</button>
+    </div>
+    <form action="#" class="form">
+        <div class="form__container">
+        <label>
+            <input placeholder="Фамилия" class="form__input form__input--data point " type="text">
+        </label>
+        <label>
+            <input placeholder="Имя" class="form__input form__input--data point" type="text">
+        </label>
+        <label>
+            <input placeholder="Отчество" class="form__input form__input--data point" type="text">
+        </label>
+        </div>
+        <div class="form__wrapper">
+            <label>
+                <input placeholder="Контактый телефон" class="form__input  form__input--contact-phone point" type="text">
+            </label>
+            <label>
+                <input placeholder="Контактный e-mail" class="form__input  form__input--contact-mail point" type="text">
+            </label>
+        </div>
+        <label for="form" class="visually-hidden"></label>
+        <textarea id="form" class="form__area-master"></textarea>
+        <h2 class="form__title">
+            Выберите модель бороды:
+        </h2>
+        <div class="form__beard-range">
+            <div class="form__beard-wrapper">
+            <label class="form__beard-label form__beard-admiral">
+                <input name="name" class="form__beard-input form__beard-input--admiral visually-hidden" type="radio">
+                <span class="form__beard-span"></span>
+                адмирал
+            </label>
+            </div>
+            <div class="form__beard-wrapper">
+                <label class="form__beard-label form__beard-forester">
+                    <input name="name" class="form__beard-input form__beard-input--forester visually-hidden" type="radio">
+                    <span class="form__beard-span"></span>
+                    лесоруб
+                </label>
+            </div>
+            <div class="form__beard-wrapper">
+                <label class="form__beard-label form__beard-traveler">
+                    <input name="name" class="form__beard-input form__beard-input--traveler visually-hidden" type="radio">
+                    <span class="form__beard-span"></span>
+                    полярник
+                </label>
+            </div>
+            <div class="form__beard-wrapper">
+                <label class="form__beard-label form__beard-lord">
+                    <input name="name" class="form__beard-input form__beard-input--lord visually-hidden" type="radio">
+                    <span class="form__beard-span"></span>
+                    боярин
+                </label>
+            </div>
+            <div class="form__beard-wrapper">
+                <label class="form__beard-label form__beard-guru">
+                    <input name="name" class="form__beard-input form__beard-input--guru visually-hidden" type="radio">
+                    <span class="form__beard-span"></span>
+                    мудрец
+                </label>
+            </div>
+            <div class="form__beard-wrapper form__beard-wrapper--extra"></div>
+        </div>
+        <h2 class="form__title">
+            Дополнительные услуги:
+        </h2>
+        <div class="form__services">
+            <div>
+                <label for="paint" class="form__services-label">
+                <input id="paint" class="form__services-input visually-hidden" type="checkbox">
+                <span class="form__services-span sp"></span>
+              Подкрасить бороду
+                </label>
+            </div>
+            <div>
+                <label for="mostage" class="form__services-label">
+                <input id="mostage" class="form__services-input visually-hidden" type="checkbox">
+                <span class="form__services-span"></span>
+                    Накрутить усы
+                </label>
+            </div>
+            <div>
+                <label for="beard" class="form__services-label">
+                <input id="beard" class="form__services-input visually-hidden" type="checkbox">
+                <span class="form__services-span"></span>
+                Причесать бороду
+                </label>
+            </div>
+            <div>
+                <label for="hide" class="form__services-label">
+                <input id="hide" class="form__services-input visually-hidden" type="checkbox">
+                <span class="form__services-span"></span>
+             Подровнять виски
+                </label>
+            </div>
+            <div>
+                <label for="cover" class="form__services-label">
+                <input id="cover" class="form__services-input visually-hidden" type="checkbox">
+                <span class="form__services-span"></span>
+                Убрать седину
+                </label>
+            </div>
+            <div>
+                <label for="bold" class="form__services-label">
+                <input id="bold" class="form__services-input visually-hidden" type="checkbox">
+                <span class="form__services-span"></span>
+                Отполировать лысину
+                </label>
+            </div>
+        </div>
+        <input type="submit" class="form__submit" value="отправить заявку">
+    </form>
+</main>
+    <footer class="page-footer">
+        <div class="page-footer__wrap">
+            <p class="page-footer__address">
+                <b>Барбершоп Бородинский</b>
+                г.Санкт-Петербург, ул .Большая конюшенная 19/8
+                <span>+7(812) 555-66-66</span>
+            </p>
+            <ul class="page-footer__networks">
+                <li class="page-footer__item">
+                    <a href="#">
+                        <img src="img/vk.png" alt="">
+                    </a>
+                </li>
+                <li class="page-footer__item">
+                    <a href="#">
+                        <img src="img/fb.png" alt="">
+                    </a>
+                </li>
+                <li class="page-footer__item">
+                    <a href="#">
+                        <img src="img/insta.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="page-footer__developers">
+                <b>Разработано:</b>
+                <a href="#">HTML ACADEMY</a>
+            </div>
+        </div>
+    </footer>
+<section class="modal success">
+<h2 class="modal__title">это успех!</h2>
+    <p class="modal__text">
+        Ваша заявка отправлена<br>
+        Ожидайте мы свяжемся с вами как только будет минутка.
+    </p>
+    <button class="modal__btn modal__btn--success">закрыть окно</button>
+</section>
+<section class="modal fail">
+    <h2 class="modal__title">неудача</h2>
+    <p class="modal__text">
+        Что-то пошло не так.<br>
+        Проверьте выделенные<br>
+        красным поля формы.
+    </p>
+    <button class="modal__btn modal__btn--fail">ок</button>
+</section>
+<section class="private">
+<h1 class="private__title">
+    Личный кабинет
+</h1>
+    <p class="private__text">
+        Введите свой логин и пароль, чтобы войти
+    </p>
+    <form action="" class="private__form">
+        <label class="private__label">
+            <input placeholder="Логин" class="private__input private__input--login" type="text">
+        </label>
+
+        <label class="private__label">
+            <input placeholder="Пароль" class="private__input private__input--password" type="text">
+        </label>
+
+        <label class="private__label check">
+            <input  class="private__input private__input--checkbox visually-hidden" type="checkbox">
+            <span class="private__span"></span>
+            Запомните меня
+            <a href="#" class="private__ref">Я забыл пароль!</a>
+        </label>
+        <input class="form__submit" type="submit" value="Войти в личный кабинет">
+    </form>
+</section>
+<script src="js/index.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

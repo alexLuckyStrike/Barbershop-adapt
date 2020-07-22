@@ -1,0 +1,59 @@
+.timer{
+  min-height:91px;
+  width:280px;
+  border:1px solid rgb(72,72,72);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.timer__clock{
+  width:56px;
+  height: 56px;
+  background: url('../../svg/Smallclock.svg');
+}
+
+.timer__text{
+  color:rgb(255,255,255);
+}
+
+@media(min-width:768px){
+  .timer{
+    width:640px;
+    margin:0;
+  }
+
+  .timer__clock{
+    width: 71px;
+    height: 70px;
+    background: url('../../svg/clock.svg') no-repeat center;
+    box-shadow: 0 0 1px 1px white;
+  }
+}
+
+@media(min-width:1200px){
+  .timer{
+    width:269px;
+    height: 278px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 20px;
+  }
+
+  .timer__clock{
+    width: 142px;
+    height: 139px;
+    background: url('../../svg/BigClock.svg');
+  }
+
+  .price-list__container{
+    display: flex;
+    width:960px;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+}

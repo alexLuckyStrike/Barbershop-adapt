@@ -4,12 +4,13 @@
   background-color: rgb(41,41,41);
   color:rgb(255,255,255);
   margin: 0 auto;
-  margin-top: -20px;
+  //margin-top: -20px;
   text-align: center;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding-top: 40px;
+  box-shadow: 0 0 1px 1px rgb(66,66,66);
 }
 
 .page-footer__address span,
@@ -24,6 +25,7 @@
   line-height: 50px;
   margin-top: 15px;
   margin-bottom: 30px;
+  box-shadow: 0 0 1px 1px rgb(62,62,62);
 }
 
 .page-footer__address b{
@@ -34,7 +36,13 @@
   width:320px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 30px;
+
+}
+
+.page-footer__networks li{
+  box-shadow: 0 0 1px 1px rgb(66,66,66);
 }
 
 .page-footer__developers b{
@@ -56,6 +64,7 @@
   margin:auto;
   margin-top: 10px;
   margin-bottom: 15px;
+  box-shadow: 0 0 1px 1px  rgb(66,66,66);
 }
 
 .page-footer__item{
